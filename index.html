@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/836138ac3a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./dist/output.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: #584dff;
+    }
+  </style>
+</head>
+
+<body class="bg-lightGrey flex flex-col items-center justify-center min-h-screen ">
+
+  <!--  border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 -->
+
+  <main id="main-wrap"
+    class="container  flex flex-col bg-white w-5/6  rounded-3xl py-10 px-4 md:rounded-lg md:p-6 md:pr-6 md:w-1/3 md:py-6  ">
+
+    <form>
+
+      <div class="form_container flex items-center space-y-2 mb-10 md:mb-0">
+        <div class="flex flex-col text-smokeyGrey">
+          <label for="day" class="text-xs font-semibold ">DAY</label>
+          <input type="number" placeholder="DD"
+            class="border border-lightGrey placeholder-lightGrey focus:outline-none focus:border-purple focus:ring-1 focus:ring-lightGrey w-3/4 py-1 px-2  rounded-md font-semibold md:w-2/3 md:my-1"
+            id="day">
+          <small class="text-xs font-sans text-lightRed italic"></small>
+        </div>
+
+        <div class="flex flex-col text-smokeyGrey ">
+          <label for="month" class="text-xs font-semibold ">MONTH</label>
+          <input type="number" placeholder="MM"
+            class="border border-lightGrey placeholder-lightGrey focus:outline-none focus:border-purple focus:ring-1 focus:ring-lightGrey w-3/4 py-1 px-2 rounded-md font-semibold md:my-1"
+            id="month">
+          <small class="text-xs font-sans text-lightRed italic"></small>
+        </div>
+
+        <div class="flex flex-col p-0 text-smokeyGrey  ">
+          <label for="year" class="text-xs  font-semibold ">YEAR</label>
+          <input type="number" placeholder="YYYY"
+            class="border border-lightGrey placeholder-lightGrey focus:outline-none focus:border-purple focus:ring-1 focus:ring-lightGrey w-3/4 py-1 pl-2 rounded-md font-semibold md:my-1"
+            id="year">
+          <small class="text-xs font-sans text-lightRed italic"></small>
+        </div>
+
+      </div>
+
+      <div class="btn_submit_block flex items-center relative md:static">
+        <hr class="border-t border-gray-300 flex-grow">
+        <button type="submit"
+          class="bg-purple hover:bg-black w-10 h-10 rounded-full flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:-translate-x-0 md:-translate-y-0">
+          <img src="./images/icon-arrow.svg" alt="submit button" class="w-5 h-5">
+        </button>
+      </div>
+
+
+
+    </form>
+
+    <section class=" output flex flex-col space-y-2 my-1 px-4 mt-10  md:my-5 md:mt-0 md:px-4">
+      <h1 class="font-extrabold text-4xl italic md:text-5xl"><span class="text-purple" id="o_years">- -</span> years
+      </h1>
+      <h1 class="font-extrabold text-4xl italic md:text-5xl"><span class="text-purple" id="o_months">- -</span> months
+      </h1>
+      <h1 class="font-extrabold text-4xl italic md:text-5xl"><span class="text-purple" id="o_days">- -</span> days</h1>
+    </section>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Boluwatife Aiyenibe</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
